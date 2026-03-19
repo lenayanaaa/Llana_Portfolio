@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elena J. Llana - Portfolio</title>
+  <!-- Google Fonts: Press Start 2P and VT323 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Floating pink squares container -->
+  <div id="floating-squares" aria-hidden="true"></div>
+  <!-- Pixelated pink clouds background accent -->
+  <div id="pixelated-clouds" aria-hidden="true"></div>
+  <div id="cute-pink-clouds-left" aria-hidden="true"></div>
+  <div id="cute-pink-clouds-right" aria-hidden="true"></div>
+  
+
+  <nav class="tab-list" role="navigation" aria-label="Main site sections">
+    <a href="#home" class="tab">Home</a>
+    <a href="#about" class="tab">About Me</a>
+    <a href="#skills" class="tab">Skills</a>
+    <a href="#projects" class="tab">Projects</a>
+    <a href="#certifications" class="tab">Certifications</a>
+    <a href="#experience" class="tab">Experience</a>
+    <a href="#curriculars" class="tab">Curriculars</a>
+  </nav>
+
+  <main class="container">
+    <!-- Home Section -->
+    <section id="home" aria-label="Home section" class="hero-section">
+      <div class="hero-content">
+        <!-- Left: Avatar with Organic Blob -->
+        <div class="hero-visual">
+          <div class="organic-blob"></div>
+          <img src="images/Me.png" alt="Elena J. Llana" class="hero-avatar" />
+        </div>
+
+        <!-- Right: Text & Intro -->
+        <div class="hero-text">
+          <h1>Hey! My name is Elena.</h1>
+          <h2>UI/UX Designer<br> Frontend Developer</h2>
+          <p>a UI/UX and frontend- focused IT Student, passionate about building clean, intuitive digital experiences that turn real-world problems into meaningful solutions.</p>
+          
+          <div class="contact-action">
+            <a href="mailto:llanaelena324@gmail.com" class="contact-btn">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" aria-label="About Elena J. Llana">
+      <h2>About Me</h2>
+      <div class="profile-box" role="region" aria-label="profile information">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#FADADD" width="48" height="48" class="pixelated" >
+          <rect width="24" height="24" fill="none"/>
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+        <p>I’m a BSIT student at Technological University of the Philippines (2022–2024), passionate about creating clean, user-focused digital experiences.</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" aria-label="Skills section with pixel styled badges">
+      <h2>Skills</h2>
+      <div class="skill-card" role="listitem" aria-label="HTML skill">HTML</div>
+      <div class="skill-card" role="listitem" aria-label="CSS skill">CSS</div>
+      <div class="skill-card" role="listitem" aria-label="JavaScript skill">JavaScript</div>
+      <div class="skill-card" role="listitem" aria-label="Figma skill">Figma</div>
+      <div class="skill-card" role="listitem" aria-label="React skill">React</div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects" aria-label="Projects">
+  <h2 class="projects-header">Projects</h2>
+
+  <div class="projects-grid">
+
+
+    <article class="project-card" aria-label="DOST Property and Inventory Management System project card">
+        <!-- Placeholder image - User to provide DOST_Inventory.png -->
+        <img src="images/DOST_Inventory.png" alt="DOST Inventory System" class="project-image pixelated" />
+        <h3>DOST Property & Inventory System</h3>
+        <p>A web-based asset management system for DOST to track properties, inventory, and generate reports. Features role-based access and real-time tracking.</p>
+        <a href="https://www.figma.com/proto/lJLyMzL495y1Iv2t6HtfTH/Project-LODI?node-id=365-17250&t=9h8g40Q48a7NVhU2-1" target="_blank" class="project-link">View Project</a>
+    </article>
+
+    <article class="project-card" aria-label="Frames project card">
+      <img src="images/FRAMES.png" alt="Frames attendance monitoring system screenshot" class="project-image pixelated" />
+      <h3>FRAMES</h3>
+      <p>Web-Based Smart Campus System with Facial Recognition and Emergency Response</p>
+      <a href="https://www.figma.com/design/AQRtNq4AsJ4wHKAaTb5vcD/SMART-CAMPUS?node-id=239-2339&t=zw0T7oi43UET7Iuu-1" target="_blank" class="project-link">View Project</a>
+    </article>
+
+    <article class="project-card" aria-label="Layag project card">
+      <img src="images/layagOV.png" alt="Layag sustainable seafood app screenshot" class="project-image pixelated" />
+      <h3>Layag</h3>
+      <p>Sustainable seafood app</p>
+      <a href="https://www.figma.com/design/amFrFHkvTKoEp5zvQC5NNp/UI-UX-UXcelerate-general-layout?node-id=0-1&t=2yVDk6vscALbc2Dz-1" target="_blank" class="project-link">View Project</a>
+    </article>
+
+    <article class="project-card" aria-label="Ka-On project card">
+      <img src="images/kaon.png" alt="Ka-On student food ordering platform screenshot" class="project-image pixelated" />
+      <h3>Ka-On</h3>
+      <p>Student food ordering platform</p>
+      <a href="https://www.figma.com/design/bS2FvsrFHpkEPxopK7wa08/Sample-food-app?node-id=0-1&t=x2w409z2wVCzHHqA-1" target="_blank" class="project-link">View Project</a>
+    </article>
+
+    <article class="project-card" aria-label="Lakbay project card">
+      <img src="images/Lakbay.png" alt="Lakbay travel booking app screenshot" class="project-image pixelated" />
+      <h3>Lakbay</h3>
+      <p>A travel and experience booking app inspired by Klook, helping users discover tours, events, and local destinations</p>
+      <a href="https://www.figma.com/design/bpcqNHMeHFhnLuOrnuHiUk/Lakbay?node-id=0-1&t=qmvpzowSi1MDEYbE-1" target="_blank" class="project-link">View Project</a>
+    </article>
+  </div>
+</section>
+
+
+    <!-- Certification Section -->
+    <section id="certifications" aria-label="Certifications" >
+      <h2>Certifications</h2>
+      <div class="cert-card">
+        <img src="images/GoogleCert.png" alt="certificate"class="project-image pixelated"/>
+        <h3>Google UX Design Certificate - Coursera</h3>
+        <p>Gained hands-on experience in user research, wireframing, prototyping, and usability testing</p>
+      </div>    
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" aria-label="Experience">
+      <h2>Experience</h2>
+      <div class="exp-card">
+        <img src="images/Hawkathon.png" alt="certificate"class="project-image pixelated"/>
+        <h3>Hackathon: UXcelerate – “Layag” App</h3>
+        <h3><strong></strong></h3> <i>March 2025</i>
+        <li>Designed a mobile app focused on sustainable seafood consumption and climate
+          alerts, addressing SDG 13 and 14</li>
+          <li>Led the UI/UX design using Figma and contributed to user flow and wireframing
+          </li>
+          <li> Collaborated with a cross-functional team in a 48-hour sprint
+          </li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- Curriculars Section -->
+    <section id="curriculars" aria-label="Curricular activities">
+      <h2>Curriculars</h2>
+      <ul class="curricular-list">
+        <li>DOST Scholar | 2022–Present</li>
+        <li>NYSTIF Volunteer | 2023</li>
+        <li>Scholars Leadership Camp | 2024</li>
+        <li>Undergrad Volunteer | 2024</li>
+        <li>TUPM DOST Scholars Club – Documentation Committee | 2022–2025</li>
+        <li>TUPM Rotaract Club – Treasurer | 2024–2025</li>
+        <li>Seminar: Study Jam – Basics of Database Administration | 2024</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Full view" />
+  </div>
+
+  <footer aria-label="Site footer">
+    <p>© 2023 Elena J. Llana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
