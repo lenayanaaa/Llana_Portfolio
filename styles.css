@@ -46,7 +46,8 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg, var(--color-bg-start), var(--color-bg-end));
-  background-attachment: fixed; /* Parallax-like static bg */
+  background-attachment: scroll; /* Changed to scroll for better mobile rendering */
+  background-size: cover;
   font-family: var(--font-body);
   color: var(--color-text-main);
   overflow-x: hidden;
@@ -330,18 +331,25 @@ section h2 {
   .tab-list {
     top: auto;
     bottom: 20px;
-    width: 90%;
-    padding: 6px 12px;
+    width: 95%;
+    padding: 8px 12px;
     gap: 4px;
     overflow-x: auto;
     justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
     border-radius: var(--radius-lg);
+    flex-wrap: nowrap; /* Keep items in a row */
+  }
+
+  /* Hide scrollbar for a cleaner look */
+  .tab-list::-webkit-scrollbar {
+    display: none;
   }
 
   .tab {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+    padding: 10px 18px; /* Slightly larger targets for thumbs */
+    font-size: 0.85rem;
+    flex-shrink: 0; /* Prevent text squishing */
   }
 
   .hero-visual {
