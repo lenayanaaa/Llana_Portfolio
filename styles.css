@@ -325,7 +325,56 @@ section h2 {
   box-shadow: 0 8px 20px rgba(255, 107, 129, 0.4);
 }
 
-/* Responsive Hero */
+/* Mobile Navigation and Hero (Small Screens) */
+@media (max-width: 600px) {
+  .tab-list {
+    top: auto;
+    bottom: 20px;
+    width: 90%;
+    padding: 6px 12px;
+    gap: 4px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
+  }
+
+  .tab {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .hero-visual {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-avatar {
+    width: 210px;
+  }
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+
+  #skills {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  #skills h2 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .skill-card {
+    width: 80px;
+    height: 80px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Base Responsive Hero */
 @media (max-width: 850px) {
   .hero-content {
     flex-direction: column;
