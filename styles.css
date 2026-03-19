@@ -366,19 +366,25 @@ section h2 {
   }
 
   #skills {
-    flex-direction: column;
-    padding: 20px 0;
+    flex-direction: row; /* Keep as row */
+    flex-wrap: wrap; /* Let them wrap if needed */
+    justify-content: center;
+    padding: 10px 0;
+    gap: 12px; /* Tighten gap */
   }
 
   #skills h2 {
+    width: 100%; /* Make header full width to push skills below on mobile */
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
   }
 
   .skill-card {
-    width: 80px;
-    height: 80px;
-    font-size: 0.8rem;
+    width: 75px; /* Compressing the size */
+    height: 75px;
+    font-size: 0.75rem;
+    padding: 6px;
   }
 }
 
